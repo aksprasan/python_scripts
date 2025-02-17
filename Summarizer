@@ -1,0 +1,5 @@
+from transformers import pipeline
+
+summary = pipeline("summarization", model="facebook/bart-large-cnn")
+Article = "Climate change refers to long-term shifts in temperature, weather patterns, and environmental conditions on Earth. It is primarily driven by human activities, such as burning fossil fuels, deforestation, and industrial practices, which release greenhouse gases like carbon dioxide into the atmosphere. These gases trap heat, causing the planet to warm and leading to more extreme weather events, rising sea levels, and disruptions in ecosystems. Addressing climate change requires global cooperation to reduce emissions, adopt renewable energy sources, and implement sustainable practices to protect the planet for future generations."
+print(summary(Article, max_length=30, min_length=5, do_sample=False))
