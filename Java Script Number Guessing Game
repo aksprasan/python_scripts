@@ -1,0 +1,21 @@
+function start() {
+    //var num = Randomizer.nextInt(0, 500);
+    var num = 5
+    var user = -1;
+    var x = equal(num, user);
+}
+
+function equal(num){
+    while (num!=user){
+        var user = readInt("GUESS THE NUMBER!");
+        if (num==user){
+            break
+        }
+        if (num<user){
+            println("Lower")
+        }else{
+            println("Higher");
+        }
+    }
+    println("Congrats, you guessed the right number!");
+}
