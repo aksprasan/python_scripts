@@ -1,0 +1,6 @@
+out=eval(input("Is outside mode on: "))
+num=int(input("Input a number: "))
+if ((out==True) and num>1) or ((out==False) and 1<=num<=10):
+  print("True")
+else:
+  print("False")
