@@ -1,0 +1,12 @@
+def to_spongecase(text):
+  x = []
+  original_user = input("Enter a phrase: ")
+  for a in range(len(original_user)):
+    if original_user[a]==" ":
+      x.append(original_user[a])
+    elif a%2==0:
+      x.append(original_user[a].lower()) # Append the modified character directly to x
+    else:
+      x.append(original_user[a].upper()) # Append the modified character directly to x
+    my_list = "".join(x)
+  print(my_list)
