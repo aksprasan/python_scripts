@@ -1,0 +1,7 @@
+age=int(input("How old are you: "))
+if(age>=14):
+  print("You are allowed to drive in Kansas")
+else:
+  age2=14-age
+  print("You can't drive a car in Kansas yet but you have only", x, "more years until you can drive")
+print("The End")
