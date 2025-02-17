@@ -1,0 +1,14 @@
+Name=input("What is your name: ")
+Last=input("What is your last name: ")
+Addy=input("What is your address: ")
+cit=input("What city do you live in: ")
+zippy=input("What is your zip code: ")
+d={
+  
+}
+d["First Name"]=Name
+d["Last Name"]=Last
+d["Address"]=Addy
+d["City"]=cit
+d["Zip code"]=zippy
+print(d)
