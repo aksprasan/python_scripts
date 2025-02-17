@@ -1,0 +1,13 @@
+day=int(input("Input a number according to the day of the week(Sun: 0 and Sat: 6): "))
+vaca=eval(input("Are you on vacation: "))
+print(vaca)
+if (vaca):
+  if ((day==0) or (day==6)):
+    print("No alarm")
+  else:
+    print("Alarm at 10:00")
+else:
+  if ((day==0) or (day==6)):
+    print("Alarm at 10:00")
+  else:
+    print("Alarm at 7:00")
