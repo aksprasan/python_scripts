@@ -1,0 +1,18 @@
+import random
+List=["rock", "paper", "scissors"]
+lis=(random.choice(List))
+user_input=input("Enter rock, paper, scissors: ")
+user=user_input.lower()
+while user not in List:
+  user_input=input("Not Valid Input! Enter rock, paper, scissors: ")
+  user=user_input.lower()
+  if user in List:
+    break
+print(lis)
+if user==lis:
+  print("Draw!")
+elif (user=="rock" and lis=="paper") or (user=="paper" and lis=="scissors") or (user=="scissors" and lis=="rock"):
+  print("You lose!")
+else:
+  print("You Win!")
+
