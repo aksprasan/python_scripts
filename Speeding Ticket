@@ -1,0 +1,11 @@
+speed=int(input("What speed were you going at: "))
+bday=eval(input("Is it your birthday(True or False): "))
+limit=60
+if bday:
+  limit=65
+if limit<speed<80:
+  print("You will get a small ticket.")
+elif speed>80:
+  print("You will get a big ticket.")
+else:
+  print("You will get no ticket")
