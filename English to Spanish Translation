@@ -1,0 +1,5 @@
+from transformers import pipeline
+
+user = input("Give a Transltion: ")
+pipe = pipeline("translation", model="Helsinki-NLP/opus-mt-tc-big-en-es")
+print(pipe(user))
