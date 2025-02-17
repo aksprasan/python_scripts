@@ -1,0 +1,22 @@
+from transformers import pipeline
+
+user = input("Enter a question: ")
+pipe = pipeline("text2text-generation", model="facebook/blenderbot-400M-distill")
+answer = (pipe(user))
+user1 = answer[0]['generated_text']
+trans = input("Do you want the answer in a diffrent language: ")
+translate = trans.lower()
+if translate == "yes":
+    lang1 = input("Enter the language: ")
+    lang = lang1.lower()
+    if lang == "spanish":
+      pipe = pipeline("translation", model="Helsinki-NLP/opus-mt-tc-big-en-es")
+      print(pipe(user))
+    elif lang == "french":
+      pipe = pipeline("translation", model="Helsinki-NLP/opus-mt-tc-big-en-fr")
+      print(pipe(user))
+    else:
+      print("Language not supported")
+else:
+  print(user1)
+
