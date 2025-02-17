@@ -1,0 +1,11 @@
+Akshat_Prasanna_Location={
+  "Firstname": "Akshat",
+  "Lastname": "Prasanna",
+  "School": "Lambert High School",
+  "City": "Suwannee",
+  "County": "Forsyth",
+  "State": "Georgia",
+  "Country": "United States of America",
+  "Continent": "North America"
+}
+print(Akshatprasannalocation)
