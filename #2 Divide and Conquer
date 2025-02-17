@@ -1,0 +1,6 @@
+import math
+x=4
+num1=math.sqrt((x**3)-(2*x**2)-(7*x)+2)
+num2=math.sqrt((x**2)-(5*x)+2)
+y=num1/num2
+print(y)
