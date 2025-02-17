@@ -1,0 +1,13 @@
+science=input('What is your grade in science: ')
+math=input('What is your grade math: ')
+ELA=input('What is your grade in ELA: ')
+SocialStudies=input('What is your grade in Social Studies: ')
+Spanish=input('What is your grade in Spanish: ')
+print(science, math, ELA, SocialStudies, Spanish)
+maximum=max(science, math, ELA, SocialStudies, Spanish)
+print(maximum)
+minimum=min(science, math, ELA, SocialStudies, Spanish)
+print(minimum)
+s=int(science)+int(math)+int(ELA)+int(SocialStudies)+int(Spanish)
+average=s/5
+print(average)
