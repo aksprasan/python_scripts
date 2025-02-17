@@ -1,0 +1,17 @@
+user=input("Enter: ")
+word=user.lower()
+vowels="aeiou"
+new=""
+old=0
+con=0
+for x in word:
+  if x in vowels:
+    old+=1
+  else:
+    new+=x
+    con+=1
+    
+
+print(new)
+print("There are",old,"constants")
+print("There are",con,"constants")
