@@ -1,0 +1,8 @@
+nums=[]
+i=0
+while i<4:
+  user=int(input("input a number: "))
+  nums.append(user)
+  i+=1
+nums.sort()
+print("the numbers in order are", nums)
