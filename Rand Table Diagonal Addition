@@ -1,0 +1,19 @@
+import random
+lst=[
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0]
+]
+diag1=0
+diag2=0
+for x in range(3):
+  for y in range(3):
+    lst[x][y]=(random.choice(range(51)))
+    if x==y:
+      diag1=diag1+lst[x][y]
+    if x+y==2:
+      diag2=diag2+lst[x][y]
+print(lst)
+print(diag1)
+print(diag2)
+
