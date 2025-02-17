@@ -1,0 +1,13 @@
+x=4
+w=5
+z=6
+temp1=(3*x**2)+(5*x)+5
+temp2=(7*w)-1/z
+temp3=4*((3+x)/9)
+numinator=5*(temp1/temp2)-z
+y=numinator/temp3
+print(y)
+
+y_2=(5*((3*x**2+5*x+5)/(7*w-1/z))-z)/(4*((3+x)/9))
+print(y_2)
+
