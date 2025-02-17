@@ -1,0 +1,39 @@
+import random
+words=["game", "true", "cats", "fish", "drag", "side"]
+#words=["game"]
+cow=0
+bull=0
+word=random.choice(words)
+x=0
+while x<3:
+  user1=input("Enter a 4 letter word: ")
+  user=user1.lower()
+  if len(user)!=4:
+    print("Sorry, that is not a valid entry. Please enter a different word")
+  else:
+    cow=0
+    bull=0
+    for a in range(4):
+      for b in range(4):
+        if word[a]==user[b]:
+          if a==b:
+            bull+=1
+          else:
+            cow+=1
+    if word==user:
+      print("You win")
+      break
+    if bull<2:
+      if cow<2:
+        print("You have", bull ,"bull and", cow,"cow!" )
+      else:
+        print("You have", bull ,"bull and", cow,"cows!" )
+    else:
+      if cow<2:
+        print("You have", bull ,"bulls and", cow,"cow!" )
+      else:
+        print("You have", bull ,"bulls and", cow,"cows!" )
+    x+=1
+if word!=user:
+  print("Sorry you lost. The word was", word)
+  
