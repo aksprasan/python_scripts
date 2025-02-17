@@ -1,0 +1,11 @@
+from textblob import TextBlob
+text=input("Enter: ")
+analysis=TextBlob(text)
+polarity = (analysis.sentiment)
+if polarity[0]>0:
+  print("Positive Statement")
+elif polarity[0]<0:
+  print("Negative Statement")
+else:
+  print("Neutral Statement")
+#print(polarity)
