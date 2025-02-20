@@ -1,0 +1,10 @@
+def double_list(arr):
+    a = []
+    for i in arr:
+        a.append(i)
+        a.append(i)
+    return a
+
+# Example usage
+arr = [1, 2, 3]
+print(double_list(arr))  # Output: [1, 1, 2, 2, 3, 3]
