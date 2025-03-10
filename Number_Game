@@ -1,0 +1,19 @@
+num = random.randint(0, 100)
+equal(num)
+print("You Lose!")
+
+def equal(num):
+    attempts = 0
+    while attempts < 10:
+        user = int(input("GUESS THE NUMBER! "))
+        if num < user:
+            print("Lower")
+        elif num > user:
+            print("Higher")
+        else:
+            print("Congrats, you guessed the right number!")
+            input("Congrats!")
+            return
+        attempts += 1
+    print("You Lose!")
+    input("See you again next time!")
